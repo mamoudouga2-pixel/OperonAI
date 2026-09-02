@@ -1,0 +1,17 @@
+test_application_lifecycle (test_core.CoreAcceptanceTests.test_application_lifecycle) ... ok
+test_cancellation_and_timeout (test_core.CoreAcceptanceTests.test_cancellation_and_timeout) ... ok
+test_event_bus_and_limits (test_core.CoreAcceptanceTests.test_event_bus_and_limits) ... ok
+test_event_unsubscribe_and_health_all (test_core.CoreAcceptanceTests.test_event_unsubscribe_and_health_all) ... ok
+test_fail_closed (test_core.CoreAcceptanceTests.test_fail_closed) ... ok
+test_invalid_transition_is_audited (test_core.CoreAcceptanceTests.test_invalid_transition_is_audited) ... ok
+test_manifest_validation (test_core.CoreAcceptanceTests.test_manifest_validation) ... ok
+test_persistence (test_core.CoreAcceptanceTests.test_persistence) ... ok
+test_restart_health_and_stop (test_core.CoreAcceptanceTests.test_restart_health_and_stop) ... ok
+test_retry_budget (test_core.CoreAcceptanceTests.test_retry_budget) ... ok
+test_task_lifecycle_and_terminal_lock (test_core.CoreAcceptanceTests.test_task_lifecycle_and_terminal_lock) ... ok
+test_worker_failure_recovery (test_core.CoreAcceptanceTests.test_worker_failure_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.009s
+
+OK
