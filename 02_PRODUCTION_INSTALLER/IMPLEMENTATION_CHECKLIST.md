@@ -1,0 +1,25 @@
+# Part 02 Production Completion Checklist
+
+- [x] Online installer flow with trusted manifest boundary
+- [x] Offline full bundle verification and installation entry point
+- [x] Mandatory component pipeline and InstallableComponent contract
+- [x] Resumable download with URL/ETag metadata and clean restart when range is unavailable
+- [x] Retry classification and exponential/backoff policy
+- [x] HTTPS/host validation and redirect boundary
+- [x] Quarantine directory contract
+- [x] Ollama adapter lifecycle: discover/install/configure/start/stop/restart/version/health/repair/uninstall
+- [x] Runtime process lifecycle with graceful shutdown and forced termination
+- [x] Permission matrix and OS-settings boundary; no bypass
+- [x] Dynamic disk-space calculation including download/temp/extraction/install/buffer
+- [x] Atomic staging/current/previous/failed activation model
+- [x] Signed manifest trust-store boundary and key rotation API
+- [x] Transactional migration backup/rollback support
+- [x] Archive path-traversal and symlink rejection
+- [x] Executable remains staged until activation boundary
+- [x] Repair scanner + clean redownload path
+- [x] Crash journal + state persistence
+- [x] Machine-readable error taxonomy and user-facing mapping
+- [x] Event bus and measurable progress events
+- [x] Log boundary and privacy guidance
+- [x] Isolated first-launch self-test baseline
+- [x] Unit/integration/failure/E2E test structure expanded
