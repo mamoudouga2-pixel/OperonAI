@@ -1,0 +1,32 @@
+COMPILE_RETURN=0
+
+
+TEST_RETURN=0
+test_red_action_flow (end_to_end.test_e2e.E.test_red_action_flow) ... ok
+test_approval_target_change (integration.test_integration.I.test_approval_target_change) ... ok
+test_untrusted_content_has_no_authority (integration.test_integration.I.test_untrusted_content_has_no_authority) ... ok
+test_allow_and_deny (unit.test_security.T.test_allow_and_deny) ... ok
+test_approval_expiry (unit.test_security.T.test_approval_expiry) ... ok
+test_audit (unit.test_security.T.test_audit) ... ok
+test_audit_missing_record_detected (unit.test_security.T.test_audit_missing_record_detected) ... ok
+test_audit_tamper_detected (unit.test_security.T.test_audit_tamper_detected) ... ok
+test_credential_access_blocked_is_audited_and_redacted (unit.test_security.T.test_credential_access_blocked_is_audited_and_redacted) ... ok
+test_credential_auth (unit.test_security.T.test_credential_auth) ... ok
+test_fail_closed (unit.test_security.T.test_fail_closed) ... ok
+test_fingerprint (unit.test_security.T.test_fingerprint) ... ok
+test_incident_response_notifies_and_audits (unit.test_security.T.test_incident_response_notifies_and_audits) ... ok
+test_network (unit.test_security.T.test_network) ... ok
+test_network_redirect_and_size_limits (unit.test_security.T.test_network_redirect_and_size_limits) ... ok
+test_plugin (unit.test_security.T.test_plugin) ... ok
+test_plugin_undeclared_capability_denied_via_guard (unit.test_security.T.test_plugin_undeclared_capability_denied_via_guard) ... ok
+test_rate (unit.test_security.T.test_rate) ... ok
+test_rate_limit_is_audited (unit.test_security.T.test_rate_limit_is_audited) ... ok
+test_red_requires_approval (unit.test_security.T.test_red_requires_approval) ... ok
+test_scope_escape (unit.test_security.T.test_scope_escape) ... ok
+test_secret (unit.test_security.T.test_secret) ... ok
+test_symlink_escape (unit.test_security.T.test_symlink_escape) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.005s
+
+OK
