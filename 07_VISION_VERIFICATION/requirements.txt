@@ -1,0 +1,9 @@
+# Core dependencies (used by the default, working reference adapters):
+Pillow>=9.0        # capture/providers.py (screen/window pixel grab), adapters/ocr_adapter.py
+pytesseract>=0.3.10 # adapters/ocr_adapter.py -- also requires the tesseract-ocr SYSTEM package
+                     # (e.g. `apt install tesseract-ocr` / `brew install tesseract`), not pip-installable.
+
+# Nothing else is required to run the full test suite. A concrete
+# VisionModelAdapter subclass (spec 7.6 -- Qwen/Gemma/local model of your
+# choice) is an integration-time addition and intentionally has no
+# dependency listed here.
