@@ -1,0 +1,2 @@
+# Part 08 uses only the Python standard library (local-first, spec 8.2).
+# No third-party packages are required to run the code or its test suite.
