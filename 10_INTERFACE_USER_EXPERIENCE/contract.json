@@ -1,5 +1,5 @@
 {
-  "name": "Local Multi-Agent Computer Worker",
+  "name": "OperonAi",
   "part": 10,
   "version": "1.0",
   "commands": ["TASK_CREATE","TASK_CLARIFY","TASK_APPROVE","TASK_REJECT","TASK_PAUSE","TASK_RESUME","TASK_CANCEL","TASK_GET_HISTORY","SETTINGS_UPDATE"],
