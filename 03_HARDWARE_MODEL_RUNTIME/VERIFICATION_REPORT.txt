@@ -1,0 +1,26 @@
+COMPILE_RETURN=0
+
+TEST_RETURN=0
+test_all_adapter_classes (test_part03.T.test_all_adapter_classes) ... ok
+test_benchmark_runner (test_part03.T.test_benchmark_runner) ... ok
+test_concurrency_and_low_resource (test_part03.T.test_concurrency_and_low_resource) ... ok
+test_contract_roundtrip (test_part03.T.test_contract_roundtrip) ... ok
+test_deterministic_fallback (test_part03.T.test_deterministic_fallback) ... ok
+test_fallback_revalidates_capability (test_part03.T.test_fallback_revalidates_capability) ... ok
+test_generate_kwargs_key (test_part03.T.test_generate_kwargs_key) ... ok
+test_lifecycle_health (test_part03.T.test_lifecycle_health) ... ok
+test_model_swap_without_selector_change (test_part03.T.test_model_swap_without_selector_change) ... ok
+test_pressure (test_part03.T.test_pressure) ... ok
+test_remote_policy (test_part03.T.test_remote_policy) ... ok
+test_safe_failure (test_part03.T.test_safe_failure) ... ok
+test_selection_and_diagnostic (test_part03.T.test_selection_and_diagnostic) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK
+
+LAUNCHER_RUN:
+selected: reference
+health: True
+resources: {'ram_gb': 3.9, 'vram_gb': 0.0, 'active_tasks': 0, 'max_concurrent_tasks': 1, 'low_resource_mode': False}
