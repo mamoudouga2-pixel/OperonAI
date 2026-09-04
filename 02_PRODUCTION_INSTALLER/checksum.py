@@ -1,0 +1,1 @@
+from artifact_manager.checksum import sha256_file

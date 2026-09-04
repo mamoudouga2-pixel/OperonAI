@@ -1,0 +1,3 @@
+# Core implementation intentionally uses Python standard library only.
+cryptography>=42; extra == "crypto"
+pytest>=8; extra == "test"
