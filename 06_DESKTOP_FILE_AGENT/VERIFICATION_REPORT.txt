@@ -1,0 +1,38 @@
+test_application_launch (tests.test_part06.T.test_application_launch) ... ok
+test_application_not_found (tests.test_part06.T.test_application_not_found) ... ok
+test_copy_conflict (tests.test_part06.T.test_copy_conflict) ... ok
+test_copy_source_preserved (tests.test_part06.T.test_copy_source_preserved) ... ok
+test_crash_recovery_no_duplicate_move (tests.test_part06.T.test_crash_recovery_no_duplicate_move) ... ok
+test_delete_blocked (tests.test_part06.T.test_delete_blocked) ... ok
+test_focus_recovery (tests.test_part06.T.test_focus_recovery) ... ok
+test_invalid_path_rejected (tests.test_part06.T.test_invalid_path_rejected) ... ok
+test_large_directory_bound (tests.test_part06.T.test_large_directory_bound) ... ok
+test_list_and_bound (tests.test_part06.T.test_list_and_bound) ... ok
+test_locked_file (tests.test_part06.T.test_locked_file) ... ok
+test_mkdir (tests.test_part06.T.test_mkdir) ... ok
+test_mkdir_invalid_name (tests.test_part06.T.test_mkdir_invalid_name) ... ok
+test_mouse_cancellation (tests.test_part06.T.test_mouse_cancellation) ... ok
+test_move (tests.test_part06.T.test_move) ... ok
+test_permission_denied (tests.test_part06.T.test_permission_denied) ... skipped 'root bypasses permission checks'
+test_recovery_bounded_then_raises (tests.test_part06.T.test_recovery_bounded_then_raises) ... ok
+test_recovery_verification_failure (tests.test_part06.T.test_recovery_verification_failure) ... ok
+test_rename_conflict (tests.test_part06.T.test_rename_conflict) ... ok
+test_rename_invalid_name (tests.test_part06.T.test_rename_invalid_name) ... ok
+test_replay (tests.test_part06.T.test_replay) ... ok
+test_replay_non_idempotent_step_blocked (tests.test_part06.T.test_replay_non_idempotent_step_blocked) ... ok
+test_restricted_root (tests.test_part06.T.test_restricted_root) ... ok
+test_restricted_subtree_pruned_during_scan (tests.test_part06.T.test_restricted_subtree_pruned_during_scan) ... ok
+test_result_contract (tests.test_part06.T.test_result_contract) ... ok
+test_retry_loop (tests.test_part06.T.test_retry_loop) ... ok
+test_screen_observation_evidence (tests.test_part06.T.test_screen_observation_evidence) ... ok
+test_screen_observation_failure (tests.test_part06.T.test_screen_observation_failure) ... ok
+test_session_and_window (tests.test_part06.T.test_session_and_window) ... ok
+test_traversal_block (tests.test_part06.T.test_traversal_block) ... ok
+test_workflow_record_and_serialize_roundtrip (tests.test_part06.T.test_workflow_record_and_serialize_roundtrip) ... ok
+test_wrong_window_prevention (tests.test_part06.T.test_wrong_window_prevention) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.010s
+
+OK (skipped=1)
+COMPILE_OK=0
