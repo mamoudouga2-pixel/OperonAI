@@ -1,0 +1,60 @@
+CHANGES MADE DURING VERIFICATION — PART 04 BOSS AGENT SUPERVISOR SYSTEM
+========================================================================
+
+1. requirements.txt — BUG FIXED
+   Before: single line "# Standard library only; Python 3.11+\n" where
+   \n was two literal characters (backslash + n), not a newline.
+   After:  proper text file ending in a real newline.
+
+2. .gitignore — BUG FIXED
+   Before: "__pycache__/\n*.pyc\n.venv/\n" as one line with literal
+   "\n" characters, so none of the three patterns were on their own
+   line and git would not have honored them correctly.
+   After:  three separate lines:
+     __pycache__/
+     *.pyc
+     .venv/
+
+3. Removed 18 committed __pycache__/*.pyc files
+   These are build artifacts that should never ship in source. They
+   were almost certainly present because bug #2 meant .gitignore never
+   actually excluded them.
+
+WHAT WAS ALREADY CORRECT (verified, not changed)
+--------------------------------------------------
+- All 10 unit tests pass on a clean run (python -m unittest discover).
+- All .py files compile cleanly (py_compile), no syntax errors.
+- Worker-selection routing (decision_engine/engine.py) matches the
+  spec table in section 5 exactly (browser/web -> Browser Agent,
+  file/desktop/local -> Desktop Agent, vision/verify/check ->
+  Vision & Verification, memory -> Memory System,
+  permission/security/authorize -> Security System).
+- Evidence-based success logic (supervisor/supervisor.py) correctly
+  refuses to accept a worker's own "success" claim without a non-empty
+  evidence field, matching spec section 6.
+- Loop/failure-pattern prevention (Supervisor.recoverable) and bounded
+  retries work as specified in section 6/9.
+- Approval gating (approval_manager + graph/runner.py) pauses on RED
+  risk actions and only proceeds on an explicit APPROVED decision,
+  matching spec section 8.
+- Final report fields (report_manager/report.py) match spec section 10
+  exactly: task_outcome, completed_failed_skipped_steps, approvals_used,
+  evidence_references, recovery_attempts, final_verification_status.
+- supervisor/state.py's allowed-transition table matches the state
+  flow diagram in spec section 7.
+
+ONE ARCHITECTURAL NOTE (not changed — flagging for your decision)
+--------------------------------------------------------------------
+supervisor/state.py (the SupervisorState class with its transition
+table) is fully implemented and unit-tested, but graph/runner.py
+(BossAgent.run) never actually instantiates or calls it — the run()
+method tracks progress with plain outcome strings instead of driving
+itself through SupervisorState.transition(). Functionally the outcomes
+line up with the spec's state names, so behavior is correct, but the
+formal state machine is currently a self-contained, tested component
+rather than the thing actually enforcing state order at runtime. I
+left this alone rather than rewiring it myself, since doing so touches
+core control flow and I didn't want to guess at intended behavior for
+edge cases (e.g. what CLARIFICATION_REQUIRED or WAITING_APPROVAL should
+map to in the transition table) without your sign-off. Happy to wire
+it in if you'd like — just say so.

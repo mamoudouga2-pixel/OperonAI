@@ -1,0 +1,26 @@
+COMPILE_RETURN=0
+TEST_RETURN=0
+Environment: Python 3.12.3 (spec requires 3.11+, standard library only)
+
+test_approval_manager (test_part04.T.test_approval_manager) ... ok
+test_clarification (test_part04.T.test_clarification) ... ok
+test_evidence_required (test_part04.T.test_evidence_required) ... ok
+test_loop_prevention (test_part04.T.test_loop_prevention) ... ok
+test_recovery_never_reuses_failed_evidence (test_part04.T.test_recovery_never_reuses_failed_evidence) ... ok
+test_red_pauses (test_part04.T.test_red_pauses) ... ok
+test_report_fields (test_part04.T.test_report_fields) ... ok
+test_state_machine (test_part04.T.test_state_machine) ... ok
+test_structured_plan (test_part04.T.test_structured_plan) ... ok
+test_worker_selection (test_part04.T.test_worker_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+OK
+
+FIXES APPLIED (see CHANGES.txt for details):
+- requirements.txt and .gitignore contained a literal two-character "\n"
+  instead of real newlines -> fixed.
+- Removed committed __pycache__/*.pyc build artifacts (18 files) that had
+  leaked into the package, likely because the broken .gitignore above
+  never actually matched them.
