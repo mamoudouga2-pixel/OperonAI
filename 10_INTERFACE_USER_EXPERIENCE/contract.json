@@ -1,0 +1,19 @@
+{
+  "name": "Local Multi-Agent Computer Worker",
+  "part": 10,
+  "version": "1.0",
+  "commands": ["TASK_CREATE","TASK_CLARIFY","TASK_APPROVE","TASK_REJECT","TASK_PAUSE","TASK_RESUME","TASK_CANCEL","TASK_GET_HISTORY","SETTINGS_UPDATE"],
+  "events": ["APP_HEALTH_CHANGED","TASK_STATE_CHANGED","STEP_STARTED","STEP_COMPLETED","VERIFICATION_COMPLETED","RECOVERY_STARTED","APPROVAL_REQUIRED","ERROR_OCCURRED","TASK_FINALIZED"],
+  "states": ["APP_STARTING","SETUP_REQUIRED","READY","TASK_CREATING","TASK_PLANNING","WAITING_FOR_USER","WAITING_FOR_APPROVAL","EXECUTING","VERIFYING","RECOVERING","PAUSED","COMPLETED","FAILED","CANCELLED"],
+  "integration": {
+    "part01": "authoritative lifecycle/task state",
+    "part02": "install/repair/update status",
+    "part03": "model/hardware health and setup progress",
+    "part04": "plan/clarification/report events",
+    "part05": "browser action status/evidence",
+    "part06": "desktop action status/evidence",
+    "part07": "verified result/evidence references",
+    "part08": "history/preferences/forget controls",
+    "part09": "permissions/approvals/security state"
+  }
+}
