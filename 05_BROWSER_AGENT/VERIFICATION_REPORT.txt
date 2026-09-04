@@ -1,0 +1,32 @@
+PART 05 BROWSER AGENT — VERIFICATION REPORT (regenerated after fixes)
+======================================================================
+
+COMPILE CHECK
+COMPILE_RETURN=0 (all modules compile clean)
+
+TEST SUITE
+test_cleanup_after_failed_start (test_part05.T.test_cleanup_after_failed_start) ... ok
+test_click_evidence_contract (test_part05.T.test_click_evidence_contract) ... ok
+test_confidence_gate (test_part05.T.test_confidence_gate) ... ok
+test_error_code_retry_policy (test_part05.T.test_error_code_retry_policy) ... ok
+test_evidence_hash_and_verification_requirement (test_part05.T.test_evidence_hash_and_verification_requirement) ... ok
+test_form_upload_download (test_part05.T.test_form_upload_download) ... ok
+test_keyboard_action_uses_keyboard_not_click (test_part05.T.test_keyboard_action_uses_keyboard_not_click) ... ok
+test_loop_detection (test_part05.T.test_loop_detection) ... ok
+test_navigation_domain_and_block (test_part05.T.test_navigation_domain_and_block) ... ok
+test_non_idempotent_protection (test_part05.T.test_non_idempotent_protection) ... ok
+test_non_retryable_error_fails_fast (test_part05.T.test_non_retryable_error_fails_fast) ... ok
+test_public_api_surface (test_part05.T.test_public_api_surface) ... ok
+test_redirect_to_disallowed_domain_is_blocked (test_part05.T.test_redirect_to_disallowed_domain_is_blocked) ... ok
+test_retryable_error_is_retried_then_succeeds (test_part05.T.test_retryable_error_is_retried_then_succeeds) ... ok
+test_sensitive_logging (test_part05.T.test_sensitive_logging) ... ok
+test_session_create_close (test_part05.T.test_session_create_close) ... ok
+test_tab_frame (test_part05.T.test_tab_frame) ... ok
+test_target_semantic_and_fallback (test_part05.T.test_target_semantic_and_fallback) ... ok
+test_vision_fallback_reaches_confidence_gate (test_part05.T.test_vision_fallback_reaches_confidence_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.003s
+
+OK
+TEST_RETURN=0
